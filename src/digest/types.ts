@@ -15,6 +15,7 @@ export type Night = {
   night: string;
   rows: DigestRow[];
   badLines: number;
+  counts: Record<RunStatus, number>;
 };
 
 export type ReadNight = (runsDir: string, night: string) => Night | null;
